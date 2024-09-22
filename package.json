@@ -2,17 +2,22 @@
   "private": true,
   "scripts": {
     "build": "nitro build --preset ",
-    "dev": "bun nitro dev",
+    "dev": "nitro dev",
     "prepare": "nitro prepare",
     "preview": "node .output/server/index.mjs"
   },
   "devDependencies": {
-    "nitropack": "latest",
-    "typescript": "^5.6.2",
+    "@j10c/eslint-config": "^0.4.0",
     "@types/react": "^18.3.5",
-    "@types/react-dom": "^18.3.0"
+    "@types/react-dom": "^18.3.0",
+    "eslint": "^8.57.1",
+    "nitropack": "latest",
+    "typescript": "^5.6.2"
   },
   "dependencies": {
+    "@keybr/page-profile": "*",
+    "@keybr/result": "*",
+    "@keybr/result-io": "*",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   }
